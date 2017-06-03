@@ -35,4 +35,4 @@ class NewVisitorTest(unittest.TestCase):
 
         # He's done and exits the page.
 if __name__ == '__main__':
-    unittest.main(warnings='ignore')
+    unittest.main()
