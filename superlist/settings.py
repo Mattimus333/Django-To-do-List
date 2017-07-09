@@ -25,7 +25,7 @@ SECRET_KEY = '6%yhgm-!c^jsn(9app1wegu$+(jz!4$zs480k2$vnlb0-or)4c'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['http://superlist.mattmuhr.com/']
+ALLOWED_HOSTS = ['superlist.mattmuhr.com']
 
 
 # Application definition
