@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '6%yhgm-!c^jsn(9app1wegu$+(jz!4$zs480k2$vnlb0-or)4c'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['superlist.mattmuhr.com', 'localhost']
 
