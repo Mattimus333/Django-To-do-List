@@ -7,7 +7,7 @@ User=mattimus
 WorkingDirectory=/home/mattimus/sites/SITENAME/source
 ExecStart=/home/mattimus/sites/SITENAME/virtualenv/bin/gunicorn \
     --bind unix:/tmp/SITENAME.socket \
-    superlists.wsgi:application
+    superlist.wsgi:application
 
 [Install]
 WantedBy=multi-user.target
