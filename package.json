@@ -1,0 +1,25 @@
+{
+  "name": "superlist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "qunitjs": "^2.4.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mattimus333/Django-To-do-List.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mattimus333/Django-To-do-List/issues"
+  },
+  "homepage": "https://github.com/Mattimus333/Django-To-do-List#readme"
+}
