@@ -1,8 +1,7 @@
-from accounts.models import Token
 from django.test import TestCase
-from django.contrib.auth import get_user_model
-
-User = get_user_model()
+from django.contrib import auth
+from accounts.models import Token
+User = auth.get_user_model()
 
 class UserModelTestCase(TestCase):
 
@@ -13,6 +12,12 @@ class UserModelTestCase(TestCase):
     def test_user_is_valid_with_email_only(self):
         user = User(email='a@b.com')
         user.full_clean()  # should not raise
+
+    def test_no_problem_with_auth_login(self):
+        user = User.objects.create(email='matt@example.com')
+        user.backend = ''
+        request = self.client.request().wsgi_request
+        auth.login(request, user)  # should not raise
 
 class TokenModelTestCase(TestCase):
 
