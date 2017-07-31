@@ -66,3 +66,9 @@ class ListModelTest(TestCase):
 
     def test_list_owner_is_optional(self):
         List.objects.create()
+
+    def test_list_name_is_first_item_text(self):
+        list_ = List.objects.create()
+        Item.objects.create(list=list_, text='Go to store')
+        Item.objects.create(list=list_, text='Go to gym')
+        self.assertEqual(list_.name, 'Go to store')
